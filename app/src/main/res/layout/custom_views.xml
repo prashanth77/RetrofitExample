@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4286f4"
+
+   >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#4286f4"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+ <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/img1"
+     android:src="@drawable/image_not_found"
+
+        />
+
+<TextView
+    android:layout_below="@+id/img1"
+    android:id="@+id/heading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="20dp"
+    android:text="Heading"
+    android:textStyle="bold"
+    android:textColor="@color/textColorPrimary"
+    android:fontFamily="serif"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+
+
+    />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:text="date"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="cursive"
+        android:textStyle="italic"
+        android:layout_marginLeft="20dp"
+        android:textSize="14dp"
+
+
+        />
+<TextView
+    android:id="@+id/description"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/date"
+    android:text="Description"
+    android:textColor="@color/colorWhite"
+    android:fontFamily="serif"
+    android:textStyle="italic"
+    android:textSize="20dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+
+
+    />
+
+    <Button
+        android:layout_below="@+id/description"
+        android:id="@+id/bt_readmore"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:padding="10dp"
+        android:textColor="#DB4437"
+        android:background="@drawable/corner_button"
+        android:text="Read More"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="3dp"
+        android:textStyle="bold"
+
+        />
+
+    <ToggleButton
+        android:id="@+id/tgplay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/date"
+        android:layout_alignBottom="@+id/date"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:visibility="invisible"
+        android:background="@drawable/btntoggle_selector" />
+</RelativeLayout>
+
+</RelativeLayout>
